@@ -1,0 +1,62 @@
+Boostrap : Front-End Library
+	lipis.github.io/bootstrap-social : to get Social Butttons for Bootstrap
+	codeply.com
+	CDN (Content Delivery Network): cloudflare.com, maxcdn.com
+	Bootstrap installation : CDN is better than local relative path
+	
+	WEB DESIGN :
+		Wireframe : LOW-fidelity representation of your website/app
+			sneakpeekit.com -> for printable wireframe
+			balsamiq.cloud
+		Mock-up : HIGH-fidelity representation of your website/app
+		
+		To Get INSPIRATION:
+			awwwards.com/websites/clean
+			ui-patterns.com
+			dribbble.com
+			
+		Nav Bar
+		Grid System: row -> col
+		Container:
+			.container class (max-width scalable) VS .container-fluid class (100% width responsive)
+		Buttons:
+			fontawesome.com
+		Carousel
+		
+		Cards:
+			bootsnipp.com
+		
+		CSS Z-index & Stacking order:
+			z-index - position  - natural stacking flow
+			
+		CSS Media Queries:
+			Google Mobile friendly test
+			@media <type> <features> { |   @media screen (min-width: 900px)
+			}						   |	 
+			
+			Size : Device - Browser - Viewport : this is the size of the screen that the website is going to display on
+			
+		DRY : Don't Repeat Yourself
+		Code Refactoring priciple guide:
+			1- Readabiliy of code
+			2- Modularity (Reusability-Maintainability like with function)
+			3- Efficiency(How fast can you make your code)
+			4- Lenght of code (codegolf.stackexchange.com :p)
+			
+		CSS Combining Selectors:
+			Multiple selectors: selector1, selector2 {}
+			Hierarchical selectors: parent child {}
+			Combined selectors: 
+				element.class {} / element#id {} / .class.class / .class.id or vice versa
+				have to be within the same ehtml element
+		
+		Selector Priority:
+			1-ID 2-CLASS 3-HTML ELEMENT TAG
+		
+		Even an element is unique, tend to use more more 'class' than 'id' -- use id more specificaly for by example navigation href 
+		TRY to apply only a single custom class to each of your elements
+		Inline CSS is a bad practices, try to not use them
+		
+		
+		
+		

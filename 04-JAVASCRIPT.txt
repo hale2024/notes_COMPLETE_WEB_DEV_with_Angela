@@ -1,0 +1,37 @@
+JAVASCRIPT: the language that powers the web
+	author: Brendan Eich
+	history: 
+		LiveScript -> 
+		JScript (by microscoft)} -> 
+		ECMAScript (european standard version of javascript) ECMA stands for european Computer Manufacturers Association
+	
+	Principle of writing consistent, idiomatic javascript: github.com/rwaldron/idiomatic.js
+	Data types:
+		Number, String, Boolean
+		typeof(variable)
+	blog.londonappbrewery.com	
+	String:
+		Concatenation
+		Lenght : variableName.lenght;
+		Slicing/Extracting parts of a string : variableName.slice(start_position, end_position);
+	Functions:
+		http://stanford.edu/~cpiech/karel/ide.html
+		function name(optional input) {/*code + optionnal return statement*/}
+	Number:
+		Math.pow(), Math.round(), Math.floor()
+		Random Number:
+			Math.Random(): 
+				generates numbers between 0 to 0.<Sixteen 9 number>
+				help to generate pseudo random number
+				Khan Academy video to watch: random vs pseudo random number
+	
+	If/else statement:
+	Array:
+		array.lenght;
+		array.imcludes(item);
+		blog.codinghorror.com
+		More lectures: Now that's what i call a hacker
+	
+	While/For Loop
+				
+			

@@ -1,0 +1,30 @@
+API: Application Programming Interface:
+	APIs use to Create Software : like jQuery does, Apple/Google API for iOS/Android development
+
+	APIs use to Interact with an External System: 
+		like when our website make a GET request to facebook servers
+		
+		bitcoinaverage.com - apiv2.bitcoinaverage.com
+		
+		cURL : client for URLs
+			for making HTTP request through the command line
+			curl.haxx.se
+			curl https://www.google.com // == GET https://www.google.com
+		unixtimestamp.com
+		
+		any-api.com // a whole list of apis
+		
+		Read the docs of an particular api to well-known how to use it
+		
+		Public vs Private API
+		funny history: Instagram vs FollowGram that tape into her private api
+		
+	JSON: JavaScript Object Notation
+		w3schools article: JSON vs XML
+		chrome extension: JSON Viewer Awesome
+		
+		JSON.stringify(javascripObject); // to convert a js object to json format data
+		JSON.parse(jsonReceivedData); // to convert received json data to javascript object
+	
+	Heroku: heroku.com
+		devcenter.heroku.com

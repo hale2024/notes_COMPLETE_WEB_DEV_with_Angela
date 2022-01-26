@@ -1,0 +1,30 @@
+DOM: Document Object Model
+	Chrome plugin: HTML5 Tree Generator
+	Selecting html elements with js:
+		document.getElementsByTagName("tag"); // return an array of element even it's one element
+		document.getElementByClassName('class'); // return an array of element even it's one element
+		document.getElementById('id'); // return an unique element, not an array
+		
+		document.querySelector("<element/class/id/hierarchical-combined selector>"); // return an unique element
+		document.querySelectorAll("<element/class/id/hierarchical-combined selector>"); // return an array of element
+		
+	Manipulating and Changing Styles:
+		w3shcools DOM style object documentation
+		Set value assign to a style property must be in a string
+		it's a bad practice however to set style like this, we need separation of work
+		
+	Syle vs Behaviour : Separtion of Concerns structure
+		classList: return the list of class of an html element
+		document.querySelector('selector').classList.add('className'); // so we can add a new to the list
+													.remove('className'); // remove one
+													.toggle('className'); // add if unexist, remove if exist
+		By this way, we can activate/deactive style, so the css stand for style and javascript for behaviour
+		
+	Text Manipulation:
+		innerHtml: gives all the html that is inside his element
+		textContent: gives only the text that is inside
+	
+	Manipulating Html Element Attributes:
+		document.querySelector('selector').attributes : return a list of attributes of an html elements
+		elementObj.getAttribute('attributeName') : return the corresponding attribute value
+		elementObj.setAttribute("attributeName", "attributeValue");

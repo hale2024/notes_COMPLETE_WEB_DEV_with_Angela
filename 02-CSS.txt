@@ -1,0 +1,79 @@
+CSS:
+colorhunt.co / emojipedia.org / pesticide.io chrome extension
+
+Inline CSS / Internal CSS / External CSS (file)
+
+default browser css values for html element
+
+All html element are boxes -> that can so be styled by css:
+	
+selector { property: value;}
+who			what		how
+
+mdn for list of css properties and color value
+
+Selector:
+	Tag selector
+	Class selector
+	Id selector
+	Pseudo-Class
+	
+Intermediate CSS
+
+favicon.cc
+Html Divs
+Css Box Model:
+	Content(width/heigth) - Padding - Border - Margin
+
+CSS Display property:
+	Block element: resizable
+	Inline element: unresizable
+	
+Default Rendering Html element Rules:
+	1. Content is Everything
+	2. Order comes from Code
+	3. Children sit on parents
+	
+CSS Position:
+	static : default rendering html element rules
+	relative + (left,right,top,bottom that simulates margin) : relative to the original postion of the html element
+	absolute + (left,right,top,bottom that simulates margin) : relative to the parent html element
+	fixed + (left,right,top,bottom that simulates margin)
+
+Centering:
+	text-align: center
+	margin auto
+
+Fonts:
+	Font-family most use : Serif/Sans-serif -> so by default browser render (Times/Arial fonts)
+	
+	css safe web fonts
+	cssfontstack.com
+	Fonts embedding : get some at fonts.google.com
+	
+loremipsumgenerator.com
+lorem-ipsum.perbang.dk
+
+flaticon.com
+giphy.com
+
+Sizing:
+	100% = 1em = 16px
+	techcrunch.com
+	
+	px : static font size
+	em / % : dynamic font size
+	
+	pixel size is not inherit
+	em/% size is inherit from parent to children,
+		so if parent got a define font-size value and the children again, so the two value are add in the children element
+	
+	rem : root em font size - dynamic too - but don't inherit size from parent
+	
+CSS Position again:
+	float: recommend to use it only FOR WRAPPING TEXT AROUND A CERTAIN ELEMENT
+	clear: it's the anti-float, so prevent element to be wrap around another element
+	
+css3buttongenerator.com
+
+	

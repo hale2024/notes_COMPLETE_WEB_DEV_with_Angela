@@ -1,0 +1,39 @@
+Backend: Server + Buisness Logic + Databases
+
+NodeJS:
+	Allows us to create a backend using JS
+	Node allows us to create really scalabe and fast running website
+	
+	command: node index.js
+	
+	Node REPL(Read Evaluate Print Loop) == like Python interpreter
+	
+	Node Native Modules: nodejs.org/api
+		//jshint esversion:6
+		const fileSystem = require("fs"); // require('name of the module')
+		fileSystem.copyFileSync('source.txt', 'destination.txt') // fileSystem.method(arguments);
+		
+	NPM: Node package manager
+		init:
+			npm init // create package.json with previous specified information
+		install:
+			npm install superheroes //npm install externalPackageName
+		usage:
+			var superHeroes = require("superheroes");
+			console.log( superheroes.random() );
+
+
+Express.js: Node's web framework
+	stateofjs.com
+	expressjs.com : npm install express // inside your web project folder where is the package.json file
+	
+	nodemon.io: reload, automatically
+		npm install -g nodemon
+		nodemon index.js
+		
+	wikipedia: List of HTTP status codes
+	httpstatuses.com also
+	
+	post form :
+		need to install body-parser : npm install body-parser	
+		

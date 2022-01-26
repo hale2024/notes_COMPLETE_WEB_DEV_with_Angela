@@ -1,0 +1,77 @@
+MONGODB: docs.mongodb.com
+	mongod //to start local mongo db server
+	mongo //to enter into mongodb shell
+		help
+		show dbs
+		db //to see the current database that you are connected to
+		use databaseName //to create a database or switch to it
+		show collections // collection == table | a document == a single row
+		db.dropDatabase // befor run this, we mut switch into the db that we want to delete
+	
+	CRUD:
+	CREATE:
+		db.collectionName.insertOne(
+			{
+				field: value,
+				...
+			}
+		)
+	READ:
+		db.collectionName.find(query, projection)
+	UPDATE:
+		db.collectionName.updateOne(search_orFilterCriteria, toChange)
+		db.products.updateOne({_id:2}, {$set: {stock:12}})
+	DELETE:
+		db.collectionName.deleteOne(search_orFilterCriteria)
+	Relationship:
+		One to Many: we can have embedded array of documentS into another document
+		Linking collection also via document 'id'
+		
+	MongoDB - NodeJS linking: so we can use :
+		//interestiong but so much code to write with it
+		1. a Mongodb Native Driver // inside a node project : npm i mongodb - and the docs to well use it 
+		
+		//BEST WAY
+		2. a ODM(object document-mapper) like Mongoose
+		
+	mongoosejs.com
+		npm i mongoose
+		// refer to code in the macOS for CRUD operations also with mogoose
+		
+		But :
+		CREATE/POST:
+			// to insert one document
+			const name = new ModelName ({
+				key: value;
+				...
+			});
+			name.save()
+			
+			// to insert many document at the same time
+			ModelName.insertMany([array_of_document, name], callback);
+		
+		READ/GET: 
+			//if you give only the callback func, it will send all the documents inside the collection
+			ModelName.find({condition}, function(err, result){
+				//result can be any name that you want
+				//do something here with err and result
+			});
+			
+			ModelName.findOne({condition}, function(err, result){
+				//result can be any name that you want
+				//do something here with err and result
+			});
+		UPDATE:
+			PUT: this will replace the entire document
+				ModelName.update({condition}, {updates}, {overwrite: true}, function(err){});
+			PATCH:
+				this will only replace the specified field in 'updates'
+				ModelName.update({condition}, {$set: {updates}}, function(err){});
+			
+		DELETE/DELETE:
+			//for deleting all the documents inside the collection
+			/if you give only the callback func, it will delete all the documents inside the collection
+			ModelName.deleteMany({condition}, function(err){//process the error here});
+			ModelName.deleteOne({condition}, function(err){//process the error here});
+		
+	search on medium : native function chaining in javascript-jquery

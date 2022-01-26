@@ -1,0 +1,86 @@
+Authentication:
+	Why authenticate:
+		for LOG IN
+		Restricte Access
+	Authentication stands with SECURITY:
+		Level 1: Registering users with Username(email) and Passwords
+		Level 2: Encryption - scrambling your data that will then need a key to be unscramble
+			first encryption algorithm: Caesar Cipher
+			cryptii.com
+			
+			npm i mongoose-encryption: a simple encryption and authentification for mongoose documents
+				will perform encryption when we call the 'save' method in a new documen that we want to register
+				will perform decryption when we call the 'find' method
+			
+			Using Environnement variables to keep secret things like secret keys, api keys, credit card keys:
+				npm i dotenv
+				
+			The Code Book - Simon Singh
+			
+		Level 3: Hashing 
+			Password -> (Hash Function) -> Hash
+			// better than encryption because we don't encryption key
+			
+			Hacking:
+				plaintextoffenders.com
+				haveibeenpwned.com
+				password-checker-online
+				wikipedia: list of most common passwords/year
+				passwordrandom.com/most-common-passwords
+				
+				Let's make a hash table:
+					- All dictionnary words : can give us like 150 000 hashes
+					- All numbers from a telephone book : we can gain like 5.000.000 hashes
+					- All combinations of characters up to 6: can give us like 19,7 millions hashes
+															Total : almost 19,8 millions of hashes
+															
+				MD5 is no longer secure hash function
+					it's take 1s for recent GPUs to generate 20 millions md5 hashes
+					
+		Level 4: Salting and Hashing passwords with bcrypt
+			Salting: Password + salt -> (hash function) -> Hash
+				Salt: is just a random value
+				
+				//and here, we will only store salt and hash in the database
+				Password + salt -> bcrypt -> More secure Hash 
+				
+				//here the salt round is 2, we apply the same salt, a certain number of times
+				Salt rounds: Password + salt -> (hash function) -> Hash + salt -> (hash function) -> Hash
+			
+			npm i bcrypt 
+			//make sure that you are in node LTS version because bcrypt don't support current release
+			//like always, read through his docs on npmjs.com
+					bcrypt.hash(plainTextPassword, saltRounds, function(err, hash){
+						// use the hash to create a new user by example
+					});
+					bcrypt.compare(plainTextPassword, storeHashPasswordInDB, function(err, result){
+						//check if res===true
+					});
+			
+		Level 5: Cookies and Sessions
+			//We have much type of cookies,
+			//There are cookies that is used to establish and maintain a session
+			
+			Session: is a period of time when the browser interact with the server
+			By example, when you log in, then your session start in this browser,
+			and at the same moment a cookie is created with user credentials access,
+			Then when you log out, the session ends, your cookie about this session is destroyed
+			
+			
+			Passport.js: 
+				passportjs.org
+				//help to create local authentification but also with service like 'google', 'facebook'
+				
+				npm i passport passport-local passport-local passport-local-mongoose express-session
+				
+		LEVEL 6: OAuth 2.0
+			open standard for token based authorization
+			
+		why oauth ?
+			granular access levels //we can ask only for user profile infos or more like also friends infos 
+			read / read+write access //we can ask facebook the right to post on the user account by exple
+			revoke access //user have the right to cancel the access to her facebook/google account
+		
+		Steps:
+			Go to passportjs.org -> Strategies section -> passport-google-oauth20
+				npm i passport-google-oauth20

@@ -1,0 +1,59 @@
+jQuery: write less, do more
+	
+	Adding jQuery into Websites:
+		// Not recommended:
+			but you can put it insite the head tag,
+			but for that you must ensure that the jQuery cdn/local source script is load by the browser
+			in your custom js file that will use jQuery syntax by doing this : 
+				$(document).ready(function(){ // your jQuery code for your website // });
+		// Best practice:
+			Include jquery library just before the boy closing tag, and so before any js file that will use it
+	
+	minifier.org // website for minifing your plain js/css code
+	
+	Selecting Elements: $("<element/class/id/hierarchical-combined selector>"); //return one/several item 
+	
+	Manipulating Styles:
+			$("selector").css("cssPropertyName") //return the value of the queried css property of that element
+		// Not recommended:	
+			$("selector").css("cssPropertyName", "newCssPropValue") // set the value of the css property
+		// Best practice:
+			$("selector").addClass("queriedClassName1 anotherOptionalClassNameIfYouWant")
+			$("selector").removeClass("queriedClassName")
+			$("selector").hasClass("queriedClassName")
+			
+	Manipulating Text:
+		$("selector").text("new text"); == document.querySelector('selector').textContent = "new text";
+		$("selector").html("new text or new tag"); == innerHtml
+		
+		
+	Manipulating Attributes:
+		$("selector").attr("attributeName") //return the value of element's attribute queried
+		$("selector").attr("attributeName", "newAttributeValue") // set the value of the attribute
+	
+	Event Listeners:
+		$("selector").click(anonymousFunction); // like adding an evenListener of type "click"
+		$("selector").keypress(anonymousFunction); //similar to the previous but for "keypress"
+		//More general:
+			$("selector").on("eventType", anonymousFunction);
+	
+	Adding and Removing Elements:
+		$("selector").before("html tag"); // add new html tag just above the selector's tag
+		$("selector").after("<p>by example a p tag</p>"); //add new html tag just below the selector's tag
+		$("selector").prepend("html tag") // add new html tag just below the selector's opening tag
+		$("selector").append("html tag") // add new html tag just above the selector's closing tag
+	
+	Website Animations: // jQuery Effects docs
+		$("selector").hide();
+		$("selector").show();
+		$("selector").toggle();
+		$("selector").fadeIn();
+		$("selector").fadeOut();
+		$("selector").fadeToggle();
+		$("selector").slideUp();
+		$("selector").slideDown();
+		$("selector").slideToggle();
+		$("selector").slideIn();
+		
+		$("selector").animate({ can be used only css rules which have numeric values });
+		

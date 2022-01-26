@@ -1,0 +1,137 @@
+DESIGN SCHOOL / DIGITAL DESIGN : In design, the golden rule is function comes before form in all cases
+------------------------------------------------------------------------------------------------------
+COLOUR:
+	Colour Theory:
+		Pick a color palette accordingly the mood that you want to convey:
+		RED: Love, Energy, Intensity
+		YELLOW: Joy, Intellect, 'Attention'
+		GREEN: Freshness, Safety, Growth
+		BLUE: Stability, Trust, Serenity
+		PURPLE: Royalty, Feminity, Wealth
+	
+	Tools for Designing with Colours:
+		ColorHunt.com
+		FlatUIColors.com //well configured for iOS apps
+		MaterialPalette.com //well configured for android apps
+		ColorZilla //chrome&firefox extension to pick hex of color that you find well on other website
+	
+	Combining colours to create Color Palettes:
+		Monocromatic Colours: 
+			tend to be incredibly contemporary and work really well for modern design so it's very in vogue actually
+			
+			/so taking the same colour and combining it either with various amounts of black or white,
+			to create different tone and shades that stand out from each other/
+			
+		Analogous Colours: adjacent colors
+			plesant to look at for a long time
+			so good for app background screen, app main interface 
+			
+		Complementary Colours: opposed colors in the color wheel
+			produce extremely flashy design, that greatly grab attention
+			so good for logo, app screenshots
+			
+		Split Colours: instead of taking the opposite color, you will take the adjacent color of a color
+			best for app icon, because, it grab attention but it's not too bad flashy
+		
+		Triadic Colours: pick a color and then draw an equilateral triangle at the opposite
+			mostly use in the 90s
+			
+---------------------------------------------------------------------------------------
+
+TYPOGRAPHY: yes FONTS MATTER
+	Two typeface/font family: serif / sans-serif
+	
+	SERIF: useful for classic/old styles
+		have this tiny little feet at the endpoint of the letter
+		4 families:
+			Old Style: Adobe Jenson is an old style serif typeface
+			Transitional: Baskerville
+			Modern: Didot
+			Slab-Serif: American Typewriter
+			
+	SANS-SERIF: for modern styles
+		4 families:
+			Grotesque: News Gothic
+			Neo-Grotesque:  Helvetica, Ariel
+			Humanist: Gill Sans
+			Geometric: Futura
+	
+	Typography Determines Readability:
+		we can compare their open shapes, intercharacter space, ambiguous/not forms, varying proportions
+		
+	DESIGN WITH ONLY FORM AND NO FUNCTION WILL NEVER EVER WORK WELL
+	
+    How to combine fonts like a pro:
+	Advices/Best practices:
+		Mix Serif & Sans-Serif: serif is good at header and sans-serif in body, but the vice-versa is good to
+		Don't mix serif with serif / sans-serif with sans-serif
+		
+		Too many fonts is not a good thing, 2 different fonts is enough
+		Don't mix different moods, Go for similar moods
+		
+	Resume of advice/best practices:
+		What must be similar: the Mood(like with colors) & the Era(modern with modern, classic with classic)
+		What must be contrast: 
+			the Serif-ness: i.e mix Serif with Sans-serif and vice versa. 
+							but never mix serif with serif or sans-serif with sans-serif
+			
+			the Weights: so it's good to combine different weight to increase the readability
+			
+			
+	The six fonts to never EVER use: ComicSans, Papyrus, Kristen, Viner, Curlz, (Euuboa-grec_letter)
+		because they will pretty much never ever look good in design
+			
+	THE TOOLS:
+		WhatFont: a chrome extension to grab infos about fonts in an website
+		FontSquirrel.com
+		fonts.google.com
+		SkyFonts: a macOS application
+	
+--------------------------------------------------------------------------------------------------------
+USER INTERFACE(UI) DESIGN:
+	1. If an app was a journey:
+		so, as a designer, you must guide your user 
+		don't display information in one homogene block of text,
+		but guide them to the big title, then subtitle, and then image block, text...
+		
+	2. How to pretend to have a designer:
+		Alignment: 
+		  a fundemental principle of graphical design is to try to minimize the number of alignment lines
+		  2 fundamental types:
+			Edge Alignment: most use
+				you have all the elements having one side lining up with a single line
+			Center Alignment
+			
+	3. How to get more clickthrough
+		The light must always come from above
+		Flat vs Material Design: material is best, it's follow most the purpose of 'design'
+		
+	4. How to design if you know nothing about design	
+		Keep things as simple as you can to start with : this is also valable for programming, starting a business
+		
+		When creating a website/an app, start with a monochrome design just black and white or hints of gray
+		that way, you can focus on the layout, on the alignment, on making things look good
+		so start in monochrome and then give a single shot of color, to highlight the key thing that you want grab user's attention to it 
+		then maybe add two color or three
+		
+		take inspiration to: dribble.com //use the hex color search  
+		
+	5. MAKE TEXT VISIBLE ON IMAGES
+		image -> then inside create a block -> then put text in the block
+			so play with the opacity, the background-color of the block
+			
+		if the image is never going to change, then play with the color of text, background-color of the image
+	
+		/if the image will change, just add a single blank overlay(block), with 20% opacity,
+		so the text will be readable with any background image/
+		
+		/the most clever way is to apply an overlay that start off at 0% opacity at the center midline of the screen,
+		then as we move downwards through the image, there is a graded opacity, so the overlay get more and more opaque
+		so we can go to 0% in the middle, to 20% opacity at the bottom of the screen/
+		
+	6. How to become an attention architect(wizard)
+		use the previous techniques such as playing with fonts to grap attention, to become a good ui architect 
+	
+	
+	
+	

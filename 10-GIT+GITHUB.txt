@@ -1,0 +1,50 @@
+Git & Github:
+	Git - version control for local rep: 
+		Working Directory -> Staging Area -> Local repository
+						git add			git commit
+	
+	git add .
+	git rm --cached <file>: git rm --cached -r . // use to unstage file so it's the opposite of git add
+	
+	git commit -m "commit message"
+	git diff filename.txt // to view the difference between the current state and last previous state of this file
+	git checkout filename.txt // to revert to the last state of this file, last state that have been commit
+	
+	Github - for remote repository:
+		Working Directory -> Staging Area -> Local repository -> Remote repository
+						git add			git commit			git push
+	
+		for syncing local to remote rep : git remote add origin <given_github_repository_url>
+		for pushing fron local to remote: git push -u origin master
+		name of remote repo: by convention it's 'origin' but we can specified anything
+	
+	.git == local repository
+	Github == an example of remote repository
+	
+	master branch: main branch of commit
+	
+	.gitignore
+		can be use inside: 	
+			*.txt
+			#it's how to do a comment in .gitignore file
+			
+		github.com/github/gitignore repo: it's a collection of useful .gitignore templates
+	
+	git clone repository_url
+		tips: search open-source-ios-apps //it's a collaborative list of open source ios apps
+		
+	Branching and Merging:
+		git branch //list all created/available branch
+		git branch nameOfBranch // create new branch with the given name
+		
+		git checkout nameOfExistingBranch //to switch to the branch where you are going to 'add/commit'
+		
+		git merge nameOfExistingBranch
+			exple: git merge experimentalBranch
+		/* if you want to merge experimentalBranch to master, 
+			this cmd must be launch when we are in master branch */
+			
+	Forking and pull requests:
+		Forking: it's just cloning a remote github repo to your own remote github repo
+		
+	

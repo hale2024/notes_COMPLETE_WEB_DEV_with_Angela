@@ -1,0 +1,34 @@
+REST API: how to build your own restful api
+	
+	robomongo.org - Robo3T a GUI for MongoDB
+	Postman
+	
+	REST: REpresentational State Transfer
+		it's essentially just an architectural style for designing API
+		other architectural style: SOAP, GraphQL, Falcor
+	2 most important rules:
+		Use HTTP Request Verbs : like GET, POST, PUT-PATCH, DELETE
+		Use specific pattern of Routes/Endpoints URLs :
+			/all_item_route :
+				GET: will fetches all item
+				POST: will create only one item
+				DELETE: will delete all item
+			/all_item_route/one_specific_item :
+				GET, PUT, PATCH, DELETE: they, all will be apply to the specific item
+	
+
+	GET /all_item_route
+	POST /all_item_route : in order to create a new item
+		Postman is really useful here, because he allows to send data without building a front-end
+		
+	app.route("route")
+	.get(function(req, res){})
+	.post(callback)
+	.delete(callback)
+	.put(callback)
+	.patch(callback)
+		
+	w3shools: HTML URL Encoding Reference
+		'space' is represented in an url by '%20'
+	
+	

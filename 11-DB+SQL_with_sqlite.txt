@@ -1,0 +1,62 @@
+DATABASES: How to persist data
+	internetlivestats.com
+	SQL				NoSQL
+	Structured		Can be not structured
+	Relational 		Non-relational(not good at that)
+	
+	SQL: is better when you have many relationship
+	NoSQL: is better when you have like 'one to many' relationship
+	
+	MySQL							MongoDB
+	More mature						Shiny and new
+	Table structure					Document structure
+	Require a schema				More flexible to changes
+	Great with relationships		Not great with complex relationships
+	Scales vertically				Horizontally scalable
+	
+	
+SQL:
+	w3schools.com/sql
+	sqliteonline.com
+	CRUD:
+	CREATE:
+		create table tableName (
+			columnName DATATYPE,
+			...,
+			PRIMARY KEY (columnName)
+		)
+		
+		insert into tableName (col1, col2, col3, ..)
+		values (v1, v2, v3, ...)
+	
+	READ:
+		select * from tableName
+		where conditionExpression;
+	
+	UPDATE:
+		// update a single record
+		update tableName
+		set column1 = value1, ...
+		where condition
+		
+		//adding new column
+		alter tableName
+		add newColumnName DATATYPE
+		
+	DELETE:
+		// delete a complete row
+		delete from tableName
+		where condition
+	RELATIONSHIP - ForeignKey
+		create table orders (
+			id INT NOT NULL,
+			order_number INT,
+			customer_id INT,
+			PRIMARY KEY (id),
+			FOREIGN KEY customer_id REFERENCES customers(id)
+		)
+	JOIN:
+		//inner join
+		SELECT orders.order_number, customers.address
+		FROM orders
+		INNER JOIN customers ON orders.customer_id = customers.id

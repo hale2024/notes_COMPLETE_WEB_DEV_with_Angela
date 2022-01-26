@@ -1,0 +1,23 @@
+Command Line:
+	Install HyperTerminal on macOS
+	Kernel: it's the program, the part of the OS (his core) that interfaces with the hardware
+	Shell: 
+		-refers to the user interface that help human to be able to interact with the kernel
+		-2 types of shell: GUI and CLI
+	Why use the CLI ?
+		For more speed and more control
+	
+	CLI techniques and more:
+		hackertyper.com //funny
+		
+		//Tips: 
+			hold Alt touch and move the cursor to the place that you want to edit in the command that you are writing by example
+			ctrl+A: move the cursor at the beginning of the current line of command
+			ctrl+E: move it at the end ...
+			ctrl+U: clear the entire line
+		
+		ls, cd, mkdir, touch, rm, rm -r, pwd, 
+		open file.txt // will open the file with the default software for that type of file 
+		open -a VSCode file.txt // will open with a specific software
+		
+	learnenough.com/command-line-tutorial

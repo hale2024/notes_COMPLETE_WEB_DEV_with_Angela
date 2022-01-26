@@ -1,0 +1,24 @@
+Intro to Html:
+codepen.io
+mdn : developer.mozilla.org
+w3schools
+devdocs.io
+
+
+web.archive.com
+docs.emmet.io/cheat-sheet
+
+	DOCTYPE	
+	Unicode / utf-8
+	meta tag
+	
+unicode-table.com
+photobucket : upload your img and get his url from there
+
+HTML:
+Structured text
+List
+Images
+Anchor/HyperLink/HyperText
+Tables
+Forms

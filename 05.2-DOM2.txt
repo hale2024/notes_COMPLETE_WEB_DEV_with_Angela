@@ -1,0 +1,76 @@
+Intermediate/Advanced DOM:
+	Adding an EventListener to a button:
+		object.addEventListener("type of event", nameFunctionWithoutParentheses);
+		object.addEventListener("type of event", anonymousFunction);
+		
+		if you highlight/selected an element and right click to inspect it, then after all of that
+		it will be selected in the element tab of chrome dev tools with also  == $0 at his right corner
+		the $0 represent an object that can be manipulate in the console with like all DOM method/property
+		
+	Passing Functions as Arguments:
+		debugger;
+		functionToDebug(functionValue);
+		
+		Higher order functions: are functions that take other functions as inputs.
+	
+	Playing Sounds on a website:
+		var sound = new Audio('myAudio.mp3');
+		sound.play();
+		
+	JS Objects:
+		var objet = {
+			propertyNameWithoutDoubleOrSimpleQuotes: value, 
+			...,
+			methodName: valueIsAnAnonymousFunction		
+		}
+		
+		Constructor Function:
+			function ClassName(<parameters>){
+				this.propertyName = parameter1;
+				...,
+				this.methodName = function(){//somethingtodo}
+			}
+			
+	Switch statement:
+		switch (expressionName) {
+			case supposedExprValue:
+				// do something
+				break;
+			...
+			default:
+				// default is optionnal
+		}
+		
+	EventListener to check Key Pressed:
+	syntax: document.addEventListener("keypress", function(event) {
+				// and now we can tap into the event.key by example
+			});
+	
+	CALLBACK Function:
+	// Declaration
+		function anotherEventListener(typeOfEvent, callBackFunc) {
+			//Detect Event
+			
+			//Create an object base on the information get about detected event by example:
+			var eventDetected = {
+				eventType: "keypress",
+				key: "u" 
+			}
+			
+			if(createdObject.eventType == typeOfEvent) {
+				// now we will can the callBackFunc and give it in parentheses the createdObject
+				callBackFunc(createdObject);
+			}
+		}
+		//callBackFunc can an anonymous or name function
+		function respondToKey(evt){
+			console.log(evt.eventType);
+		}
+	
+	//Usage
+		anotherEventListener("keypress", respondToKey(evt));
+		
+		
+	ADDING ANIMATION IN WEBSITES:
+		// We can make animation by adding an css class and removing it after a certain time 
+		setTimeout(namedOrAnonymousFunction, timeDelay) // 1second = 1000 as value of timeDelay
